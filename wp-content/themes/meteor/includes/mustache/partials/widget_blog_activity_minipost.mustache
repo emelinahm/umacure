@@ -1,9 +1,0 @@
-<li>
-  {{#image}}<a class="post-img framed-image" href="{{{permalink}}}" style="width: {{{thumb_size}}}px; height: {{{thumb_size}}}px;">{{! IE8 needs a width set }}
-    <img alt="" width="{{{thumb_size}}}" height="{{{thumb_size}}}" src="{{{image}}}" />
-  </a>{{/image}}
-  <p class="wrap">
-    <a class="title" href="{{{permalink}}}">{{^image}}<i class="icon-file-alt"></i> &nbsp; {{/image}}{{title}}</a>
-    <small class="desc">{{by}} {{#author_url}}<a href="{{{author_url}}}">{{/author_url}}{{author}}{{#author_url}}</a>{{/author_url}} {{on}} {{date}}</small>
-  </p>
-</li>
