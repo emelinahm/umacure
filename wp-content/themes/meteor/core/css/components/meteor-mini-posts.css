@@ -1,0 +1,102 @@
+/* components/meteor-mini-posts.css */
+ul.meteor-mini-posts {
+  margin: 0;
+  padding: 0 0 0.5em;
+}
+ul.meteor-mini-posts li {
+  list-style: none;
+  margin: 0;
+}
+ul.meteor-mini-posts li {
+  *zoom: 1;
+}
+ul.meteor-mini-posts li:before,
+ul.meteor-mini-posts li:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+ul.meteor-mini-posts li:after {
+  clear: both;
+}
+ul.meteor-mini-posts li + li {
+  margin-top: 1.2em;
+}
+ul.meteor-mini-posts li a.post-img {
+  position: relative;
+  margin-right: 16px;
+  display: block;
+  float: left;
+}
+footer ul.meteor-mini-posts li a.post-img {
+  -webkit-box-shadow: 0 2px 4px rgba(28, 28, 28, 0.45);
+  -moz-box-shadow: 0 2px 4px rgba(28, 28, 28, 0.45);
+  -o-box-shadow: 0 2px 4px rgba(28, 28, 28, 0.45);
+  box-shadow: 0 2px 4px rgba(28, 28, 28, 0.45);
+}
+ul.meteor-mini-posts li p.wrap {
+  overflow: hidden;
+  margin: 0;
+}
+ul.meteor-mini-posts li p.wrap a.title {
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  display: inline-block;
+  line-height: 1.4em;
+}
+ul.meteor-mini-posts li p.wrap a.title + small.desc {
+  margin-top: 0.3em;
+}
+ul.meteor-mini-posts li p.wrap a.title:hover {
+  text-decoration: none;
+}
+.sidebar ul.meteor-mini-posts li p.wrap a.title {
+  color: #646464;
+}
+.sidebar ul.meteor-mini-posts li p.wrap a.title:hover {
+  color: #fa5b15;
+}
+ul.meteor-mini-posts li p.wrap small.desc {
+  display: block;
+}
+.sidebar ul.meteor-mini-posts li p.wrap small.desc {
+  color: #b7b7b7;
+}
+footer ul.meteor-mini-posts li p.wrap small.desc {
+  color: #7c7c7c;
+}
+ul.meteor-mini-posts li p.wrap small.desc + a.title {
+  margin-top: 0.3em;
+}
+.sidebar ul.meteor-mini-posts li p.wrap small.desc a {
+  color: #777777;
+}
+.sidebar ul.meteor-mini-posts li p.wrap small.desc a:hover {
+  color: #636363;
+}
+footer ul.meteor-mini-posts li p.wrap small.desc a {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  color: #bdbdbd;
+  opacity: 0.8;
+}
+footer ul.meteor-mini-posts li p.wrap small.desc a:hover {
+  opacity: 1;
+  color: #e88255;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  ul.meteor-mini-posts li a.post-img {
+    margin-right: 10px;
+  }
+  ul.meteor-mini-posts li a.post-img img {
+    max-width: 48px;
+    height: auto;
+  }
+  footer ul.meteor-mini-posts li a.post-img {
+    display: none !important;
+  }
+}

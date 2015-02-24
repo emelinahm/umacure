@@ -1,0 +1,1038 @@
+/*****  ******/
+section.block+section.block{
+  margin-top:0px !important;
+}
+section.block>.row>[class*=span]+[class*=span]{
+  margin-top:0px !important;
+}
+
+input[type=text], input[type=email], input[type=password], textarea{
+  border:none !important;
+  background-color:#ffffff !important;
+  height:27px;
+}
+input[type=text], input[type=email], input[type=password]{
+  line-height:28px;
+  padding:0px;
+  padding-left:16px;
+}
+
+
+.nested-layout>[class*=span]+[class*=span]{
+  margin-top:0px !important;
+}
+
+.sidebar>*+*, .sidebar>*+*{
+  margin-top:0px !important;
+}
+
+section.block.container{
+  background-color:#EDE6DD;
+}
+
+
+header{
+  display:none !important;
+}
+footer{
+display:none !important;
+}
+
+h3{
+  margin:0px !important;
+  margin-bottom:8px !important;
+}
+
+/***** float領域の高さを合わせる。今回はサイドバー(span3内)の色分けに使用 *****/
+
+
+.row{
+  overflow: hidden !important;
+  overflow: visible;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+.span3{
+  padding-bottom: 32767px !important;
+  margin-bottom: -32767px !important;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 100%;
+  background-color:#6B523B;
+}
+
+
+/*******head-block**********/
+.head-block{
+  background-color:#ffffff;
+}
+
+.head-top{
+  position:relative;
+  width:100%;
+}
+
+.site-logo{
+  float:left;
+  width:30%;
+  padding-left:2%;
+  padding-top:15px;
+}
+
+.site-discription{
+  float:right;
+  position:absolute;
+  bottom:28px;
+  right:10px;
+  font-size:15px;
+}
+
+.site-discription2{
+  float:right;
+  position:absolute;
+  bottom:-22px;
+  right:10px;
+  font-size:15px;
+}
+
+.mobile-header{
+  float:left;
+  width:35%;
+  padding-left:2%;
+}
+
+.mobile-discription{
+  float:right;
+  text-align:right;
+  font-weight:bold;
+  width:40%;
+  font-size:12px;
+  padding-right:2%;
+  padding-top:2%;
+}
+
+.main-menu-block{
+  background-image:url("http://umacure.net/wp-content/uploads/2014/03/uma_bottom_tya_line.png");
+  height:32px;
+  padding-top:8px;
+}
+
+.main-menu-home{
+  padding-left:16px;
+  padding-right:16px;
+  border-right:solid 1px #EDE6DD;
+  float:left;
+}
+
+.main-menu-ji{
+  float:left;
+  padding-top:2px;
+  padding-left:16px;
+  padding-right:16px;
+  font-size:16px;
+  border-right:solid 1px #EDE6DD;
+}
+.main-menu-ji a{
+  color:#EDE6DD;
+}
+.main-menu-ji-last{
+  float:left;
+  padding-top:2px;
+  padding-left:16px;
+  padding-right:16px;
+  font-size:16px;
+}
+.main-menu-ji-last a{
+  color:#EDE6DD;
+}
+.search-box{
+  float:right;
+  background-color:#A5B724;
+  border-radius: 20px;        /* CSS3草案 */
+  -webkit-border-radius: 20px;    /* Safari,Google Chrome用 */
+  -moz-border-radius: 20px;   /* Firefox用 */
+  margin-right:4%;
+  position:relative;
+  top:-2px;
+  width:200px;
+}
+.search-box form{
+ -webkit-border-top-left-radius: 20px;
+-webkit-border-bottom-left-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-bottomleft: 20px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+.search-box input{
+-webkit-border-top-left-radius: 20px;
+-webkit-border-bottom-left-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-bottomleft: 20px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+width:150px;
+min-width:150px;
+max-width:150px;
+}
+
+.search-box-mobile{
+  background-color:#A5B724;
+  border-radius: 20px;        /* CSS3草案 */
+  -webkit-border-radius: 20px;    /* Safari,Google Chrome用 */
+  -moz-border-radius: 20px;   /* Firefox用 */
+}
+.search-box-mobile input{
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+      width:220px;
+}
+
+
+
+.search-right{
+}
+.search-right img{
+  padding-left:6px;
+  height:21px;
+  padding-right:2px;
+  padding-top:3px;
+  padding-bottom:3px;
+}
+
+/***********footer***************/
+.foot-block{
+  background-color:#ffffff;
+}
+
+.footer-top{
+  position:relative;
+  width:100%;
+  background-image:url("http://umacure.net/wp-content/uploads/2014/03/uma_bottom_tya_line.png");
+}
+.foot-site-discription{
+  float:right;
+  position:absolute;
+  color:#ffffff;
+  font-size:15px;
+  bottom:15px;
+  right:10px;
+}
+
+.footer-bottom{
+  background-color:#A5B724;
+  padding-bottom:12px;
+  padding-top:8px;
+}
+
+.bottom-left{
+  float:left;
+  width:38%;
+  padding-left:2%;
+}
+
+.bottom-left a{
+  color:#ffffff;
+}
+
+
+.bottom-right{
+  float:right;
+  color:#ffffff;
+  width:58%;
+  padding-right:2%;
+  text-align:right;
+}
+
+
+
+
+/********サブメニュー**********/
+.sub-menu{
+  background-color:#A5B724;
+  margin-right:-30px;
+  padding-left:16px;
+  padding-right:16px;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+
+.uma-split{
+  margin-right:-30px;
+}
+
+.sub-menu-ji{
+  float:left;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:0px;
+  padding-right:13px;
+  font-size:14px;
+}
+.sub-menu-ji a{
+  color:#ffffff;
+}
+/***************TOP******************/
+.newentry{
+  margin-left:15px;
+  margin-right:-25px;
+  min-height:1050px;
+}
+
+.newentry_top{
+  margin-left:15px;
+  margin-right:-25px;
+}
+.newentry-title{
+  margin-top:16px;
+  margin-bottom:8px;
+}
+
+.newentry-title-left{
+  font-size:20px;
+  color:#5B4631;
+  float:left;
+  width:40%;
+  font-weight:bold;
+}
+.newentry-title-right{
+  font-size:15px;
+  padding-right:15px;
+  color:#5B4631;
+  float:right;
+  text-align:right;
+  width:40%;
+}
+
+.newentry-cell{
+  width:32%;
+  margin-right:1.3%;
+  float:left;
+  margin-bottom:1.3%;
+}
+
+
+
+.newentry-cell-thum img{
+  width:100%;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+}
+
+.newentry-cell-info{
+  background-color:#A5B724;;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    padding-top:8px;
+    padding-bottom:16px;
+}
+
+.cell-date{
+  background-color:#5C4830;
+  padding-top:3px;
+  padding-bottom:4px;
+  padding-left:8px;
+  padding-right:7px;
+  color:#ffffff;
+  font-size:13px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px;
+}
+.cell-cat{
+  color:#5C4830;
+  font-size:12px;
+  font-weight:bold;
+}
+.side-cat-list a{
+  font-size:12px;
+}
+
+.sp-br{
+  display:none;
+}
+
+.newentry-cell-posttitle{
+  margin-top:12px;
+  padding-left:12px;
+  padding-right:12px;
+  height:44px;
+  overflow:hidden;
+}
+.cell-title{
+  font-size:12px;
+  color:#ffffff;
+}
+.cell-title:active,.cell-title:hover{
+  color:#5C4830;
+}
+
+
+/*************single**************/
+.post_pankuzu{
+  margin-top:10px;
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.youtube-umekomi{
+  margin-left:18%;
+  margin-right:15%;
+}
+
+
+.uma-post-head{
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.single-post{
+  margin-left:2%;
+  margin-right:1%;
+}
+
+
+.uma-post-cat{
+  background-color:#5C4830;
+  padding-top:4px;
+  padding-bottom:5px;
+  padding-left:10px;
+  padding-right:9px;
+  color:#ffffff !important;
+  text-decoration: none;
+  font-size:14px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.uma-post-date{
+  padding-top:4px;
+  padding-bottom:5px;
+  padding-left:8px;
+  color:#5B4631;
+  font-size:14px;
+}
+.uma-post-title{
+  padding-top:16px;
+  padding-bottom:16px;
+  color:#5B4631 !important;
+  font-size:26px !important;
+  line-height:36px !important;
+  font-weight:bold !important;
+  margin:0px !important;
+}
+.uma-single-controll{
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:20px !important;
+  padding-bottom:20px !important;
+  width:330px;
+}
+.single-img-box{
+  margin-left:8%; margin-right:8%;
+  margin-bottom:15px;
+}
+.single-img-box img{
+  width:100%;
+}
+
+.single-img-box-large{
+  margin-left:2%; margin-right:2%;
+  margin-bottom:15px;
+}
+.single-img-box-large img{
+  width:100%;
+}
+
+.single-img-box-small{
+  margin-left:20%; margin-right:20%;
+  margin-bottom:15px;
+}
+.single-img-box-small img{
+  width:100%;
+}
+
+.img-caption{
+  background-color:#A5B724;
+  line-height:28px;
+  font-size:15px;
+  padding-left:12px;
+  padding-right:12px;
+  padding-bottom:2px;
+  color:#ffffff;
+}
+.midashi{
+  color:#43423F !important;
+  margin-top:30px !important;
+  font-weight:bold !important;
+}
+
+.honbun{
+  line-height:25px;
+  padding-bottom:10px;
+}
+.gaibu-link{
+  padding-bottom:8px;
+}
+
+
+.uma-inyo-wrap{
+  background-color:#ffffff;
+  border:solid 1px #999999;
+  padding-left:2%;
+  padding-right:2%;
+  padding-top:1%;
+  padding-bottom:1%;
+  margin-bottom:15px;
+
+}
+.inyo-table{
+  margin:0px;
+}
+.inyo-left{
+  width:40px;
+  vertical-align: top;
+}
+.inyo-left img{
+  position:relative;
+  top:2px;
+}
+.inyo-right{
+  vertical-align: top;
+}
+
+
+hr.kugiri {
+    border: 0;
+    height: 0;
+    border-bottom: 1px solid #999999;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.syoseki-left{
+  float:left;
+  width:40%;
+}
+.syoseki-right{
+  float:left;
+  position:relative;
+  top:-24px;
+  width:58%;
+  padding-left:2%;
+}
+
+
+  .newentry{
+    margin-left:15px;
+    margin-right:-25px;
+  }
+
+.post-bottom-wrap{
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.post-bottom-left{
+  float:left;
+}
+
+.post-bottom-right{
+  float:right;
+  text-align:right;
+  padding-top:8px;
+}
+
+.cat-pagenation{
+  float:right;
+  margin-right:2%;
+  padding-top:8px;
+  padding-bottom:8px;
+}
+
+.now-page {
+  background-color:#5C4830;
+  color:#ffffff;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:8px;
+  padding-right:8px;
+  margin-left:6px;
+}
+
+.other-page a{
+  background-color:#A5B724;
+  color:#ffffff;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:8px;
+  padding-right:8px;
+  margin-left:6px;
+  text-decoration:none !important;
+}
+.other-page a:active,.other-page a:hover{
+  background-color:#5C4830;
+}
+
+/***********sidebar****************/
+.span3{
+  padding-left:15px !important;
+  padding-right:15px !important;
+}
+.side-title{
+  margin-left:-15px;
+  background-color:#5C4830;
+  padding-top:5px;
+  padding-bottom:6px;
+  padding-left:15px;
+  padding-right:9px;
+  color:#ffffff;
+  font-size:16px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px;
+}
+
+.side-title2{
+  background-color:#5C4830;
+  padding-top:5px;
+  padding-bottom:6px;
+  padding-left:15px;
+  padding-right:9px;
+  color:#ffffff;
+  font-size:16px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px;
+}
+
+.st-tag-cloud {
+  padding-bottom:40px;
+}
+
+.st-tag-cloud a{
+  background-color:#A5B724;
+  padding-top:3px;
+  padding-bottom:5px;
+  padding-left:6px;
+  padding-right:6px;
+  margin-top:5px;
+  margin-bottom:5px;
+  float: left;
+  margin-right: 5px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.st-tag-cloud a:active{
+  background-color:#69821b;
+}
+.st-tag-cloud a:hover{
+  background-color:#69821b;
+}
+
+.span9 .st-tag-cloud {
+  padding-left:2%;
+}
+
+.span9  .st-tag-cloud a{
+  margin-top:7px;
+  margin-bottom:7px;
+  margin-right: 8px;
+}
+
+
+
+.side-cat{
+  padding-bottom:40px;
+}
+.side-cat a{
+  font-size:12px;
+}
+
+.side-cat-link{
+  font-weight:bold;
+  line-height:30px;
+  font-size:14px;
+  color:#EDE6DD !important;
+}
+
+.side-cat-link span{
+  color:#ffffff;
+  font-size:13px;
+  font-weight:normal !important;
+}
+
+.span9 .side-cat{
+  margin-left:2%;
+}
+.span9 .side-cat-link{
+  font-weight:bold;
+  line-height:32px;
+  font-size:16px;
+  color:#929F27 !important;
+}
+
+.span9 .side-cat-link span{
+  color:#292929;
+  font-size:14px;
+  font-weight:normal !important;
+}
+
+
+
+
+.side-rank-table{
+  margin:0px;
+  margin-top:8px;
+}
+
+.side-rank-left{
+  width:18%;
+  padding-right:1%;
+  vertical-align:top;
+}
+.side-rank-right{
+  width:80%;
+  padding-right:1%;
+  padding-top:2px;
+  vertical-align:top;
+  padding-bottom:8px;
+
+}
+.side-rank-right a{
+  color:#EDE6DD;
+  font-size:12px;
+}
+
+/**************single 記事下**************/
+.yarpp-related{
+  background-color:#ffffff;
+  list-style-type: none;
+  margin-left:2%;
+  padding-top:15px;
+  padding-left:12px;
+  padding-right:12px;
+  padding-bottom:12px;
+}
+.yarpp-related a{
+  line-height:28px;
+}
+
+.single-tags-title{
+  margin-left:2%;
+  font-size:130%;
+  padding-top:20px;
+}
+.single-tags-area{
+  margin-left:2%;
+}
+.single-tags-area a{
+  background-color:#A5B724;
+  padding-top:3px;
+  padding-bottom:5px;
+  padding-left:6px;
+  padding-right:6px;
+  margin-top:5px;
+  margin-bottom:5px;
+  float: left;
+  margin-right: 5px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color:#ffffff;
+  text-decoration:none !important;
+}
+
+.single-tags-area a:active{
+  background-color:#69821b;
+}
+
+.single-tags-area a:hover{
+  background-color:#69821b;
+}
+
+/*************ランキング****************/
+.ranking-wide{
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.ranking-wide td{
+  vertical-align:top;
+  padding-bottom:8px;
+  padding-top:8px;
+}
+
+.rank-wide-left{
+  width:105px;
+  padding-right:5px;
+}
+
+.wide-rank-title{
+margin-top:8px;
+margin-bottom:4px;
+}
+
+.right-ranking-icon{
+  background-color:#5C4830;
+  padding-top:10px;
+  padding-left:6px;
+  padding-right:4px;
+  padding-bottom:7px;
+}
+.ranking-wide tr{
+  border-bottom:1px solid #5C4830;
+}
+
+/************サイト情報*************/
+.info-block{
+  margin-left:4%;
+  margin-right:2%;
+  padding-top:15px;
+}
+
+.info-midashi span{
+  font-size:28px;
+  color:#A5B724;
+  padding-right:5px;
+  position:relative;
+  top:2px;
+
+}
+
+.info-midashi{
+  font-size:18px;
+  font-weight:bold;
+  color:#5C4830;
+  line-height:28px;
+  padding-bottom:2px;
+  border-bottom:1px solid #5C4830;
+}
+
+.info-midashi2 span{
+  font-size:28px;
+  color:#A5B724;
+  padding-right:5px;
+  position:relative;
+  top:2px;
+
+}
+
+.info-midashi2{
+  font-size:18px;
+  font-weight:bold;
+  color:#5C4830;
+  line-height:28px;
+  padding-bottom:2px;
+  border-bottom:1px solid #5C4830;
+}
+
+.info-naiyo{
+  margin-bottom:20px;
+  margin-top:8px;
+}
+
+.suisyo-spec{
+  margin-top:8px;
+  padding-top:4px;
+  margin-left:25px;
+}
+.suisyo-spec span{
+  font-weight:bold;
+}
+
+.unei-table{
+  margin-top:10px;
+  margin-left:14px;
+}
+.unei-left{
+  width:70px;
+  font-weight:bold;
+  vertical-align:top;
+}
+
+/**********可変設定***********/
+
+@media only screen and (max-width: 1200px) {
+  .newentry{
+    margin-left:12px;
+    margin-right:-17px;
+    min-height:1150px;
+  }
+  .newentry_top{
+    margin-left:12px;
+    margin-right:-17px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .search-box{
+      margin-right:1%;
+      width:200px;
+  }
+
+
+
+  .newentry{
+    margin-left:10px;
+    margin-right:-15px;
+    min-height:1300px;
+  }
+  .newentry_top{
+    margin-left:10px;
+    margin-right:-15px;
+  }
+  .sp-br{
+    display:block;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+
+.youtube-umekomi{
+  margin-left:0.2%;
+  margin-right:0%;
+}
+
+.uma-split{
+  position:relative;
+  top:3px;
+}
+  .sp-br{
+    display:none;
+  }
+
+  .newentry{
+    margin-left:5px;
+    margin-right:5px;
+  }
+  .newentry_top{
+    margin-left:5px;
+    margin-right:5px;
+  }
+  .newentry-title-left{
+    width:100%;
+  }
+
+
+  .newentry-cell{
+    width:100%;
+    margin-right:0px;
+    float:left;
+    margin-bottom:15px;
+  }
+
+
+  .head-middle{
+    position:relative;
+    top:3px;
+  }
+
+  .sub-menu{
+    padding-left:4px;
+  }
+  .sub-menu-ji{
+    padding-right:0px;
+    font-size:12px;
+  }
+
+  .sub-4sec{
+    width:24%;
+    text-align:center;
+  }
+  .sub-3sec{
+    width:32%;
+    text-align:center;
+  }
+
+  .main-menu-ji{
+    font-size:14px;
+    padding-left:16px;
+    padding-right:16px;
+  }
+  .main-menu-ji-last{
+    font-size:14px;
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  .uma-post-head{
+    margin-top:10px;
+  }
+
+  .uma-post-title{
+    font-size:22px;
+
+    padding-top:12px;
+    padding-bottom:12px;
+    line-height:30px;
+
+  }
+
+  .uma-single-controll{
+    width:255px;
+  }
+  .controll-prev{
+    width:85px;
+  }
+  .controll-next{
+    width:85px;
+  }
+  .controll-top{
+    width:75px;
+  }
+  .single-img-box{
+    margin-left:2%;
+    margin-right:2%;
+  }
+  .single-img-box-large{
+    margin-left:2%;
+    margin-right:2%;
+  }
+  .single-img-box-small{
+    margin-left:2%;
+    margin-right:2%;
+  }
+  .gaibu-link a{
+    width:290px;
+  }
+
+  .uma-inyo-wrap{
+    margin-left:1%;
+    margin-right:1%;
+  }
+  .inyo-left{
+    width:20px;
+  }
+  .yarpp-related{
+    margin-left:0%;
+  }
+
+  .side-cat{
+  padding-bottom:15px;
+}
+
+
+}
+
+
+

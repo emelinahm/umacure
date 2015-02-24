@@ -1,0 +1,186 @@
+/* components/meteor-notification.css */
+.meteor-notification {
+  position: relative;
+  padding: 18px 17px 17px;
+  margin-bottom: 1.1em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.meteor-notification > .content > *:first-child {
+  margin-top: 0 !important;
+}
+.meteor-notification > .content > *:last-child,
+.meteor-notification > .content > .last-child {
+  margin-bottom: 0 !important;
+}
+.meteor-notification > .content p {
+  position: relative;
+  z-index: 1;
+}
+.meteor-notification > .content p a {
+  color: inherit;
+  text-decoration: underline;
+}
+.meteor-notification strong {
+  color: inherit;
+}
+.meteor-notification span.close {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  position: absolute;
+  width: 10px;
+  line-height: 1;
+  font-size: 1.3em;
+  text-align: center;
+  top: 50%;
+  right: 18px;
+  margin-top: -0.5em;
+  opacity: 0.5;
+  z-index: 1;
+  text-shadow: 0 1px 0 white;
+}
+.meteor-notification span.close:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.meteor-notification.dismiss {
+  padding-right: 43px;
+}
+.meteor-notification.icon {
+  padding-left: 50px;
+}
+.meteor-notification.icon > i:first-child {
+  position: absolute;
+  line-height: 1.75em;
+  font-size: 1.75em;
+  width: 50px;
+  height: 1.75em;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  margin-top: -0.87em !important;
+  opacity: 0.9;
+  text-shadow: 0 1px 0 white;
+}
+.meteor-notification:after {
+  position: absolute;
+  display: block;
+  content: "\020";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.75) inset;
+  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.75) inset;
+  -o-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.75) inset;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.75) inset;
+}
+.meteor-notification.info {
+  background: #ffffff;
+  color: #898989;
+  border: solid 1px #dadada;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.048) inset;
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.048) inset;
+  -o-box-shadow: 0 0 8px rgba(0, 0, 0, 0.048) inset;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.048) inset;
+}
+.meteor-notification.info p a {
+  color: #fb773d;
+}
+.meteor-notification.info p a:hover {
+  color: #fa5b15;
+}
+.meteor-notification.info strong {
+  color: #898989;
+}
+.meteor-notification.info a:hover {
+  color: #a7a7a7;
+}
+.meteor-notification.warning {
+  background: #fffeef;
+  color: #e17f15;
+  border: solid 1px #ffdb7a;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 0 8px #fff3c0 inset;
+  -moz-box-shadow: 0 0 8px #fff3c0 inset;
+  -o-box-shadow: 0 0 8px #fff3c0 inset;
+  box-shadow: 0 0 8px #fff3c0 inset;
+}
+.meteor-notification.warning p a {
+  color: #d47208;
+}
+.meteor-notification.warning p a:hover {
+  color: #ed983c;
+}
+.meteor-notification.warning strong {
+  color: #d47208;
+}
+.meteor-notification.warning a:hover {
+  color: #ffbf14;
+}
+.meteor-notification.tip {
+  background: #e1eaff;
+  color: #6476a2;
+  border: solid 1px #a8bdec;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 0 8px rgba(30, 78, 188, 0.09) inset;
+  -moz-box-shadow: 0 0 8px rgba(30, 78, 188, 0.09) inset;
+  -o-box-shadow: 0 0 8px rgba(30, 78, 188, 0.09) inset;
+  box-shadow: 0 0 8px rgba(30, 78, 188, 0.09) inset;
+}
+.meteor-notification.tip strong {
+  color: #6476a2;
+}
+.meteor-notification.tip a:hover {
+  color: #547dda;
+}
+.meteor-notification.success {
+  background: #e1f7dd;
+  color: #579714;
+  border: solid 1px #a8d1a0;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 0 8px rgba(32, 116, 32, 0.08) inset;
+  -moz-box-shadow: 0 0 8px rgba(32, 116, 32, 0.08) inset;
+  -o-box-shadow: 0 0 8px rgba(32, 116, 32, 0.08) inset;
+  box-shadow: 0 0 8px rgba(32, 116, 32, 0.08) inset;
+}
+.meteor-notification.success strong {
+  color: #4a8011;
+}
+.meteor-notification.success a:hover {
+  color: #69b05b;
+}
+.meteor-notification.error {
+  background: #ffe2e2;
+  color: #d74f4f;
+  border: solid 1px #f79e9e;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 0 8px rgba(255, 3, 3, 0.08) inset;
+  -moz-box-shadow: 0 0 8px rgba(255, 3, 3, 0.08) inset;
+  -o-box-shadow: 0 0 8px rgba(255, 3, 3, 0.08) inset;
+  box-shadow: 0 0 8px rgba(255, 3, 3, 0.08) inset;
+}
+.meteor-notification.error strong {
+  color: #d33e3e;
+}
+.meteor-notification.error a:hover {
+  color: #ef4040;
+}

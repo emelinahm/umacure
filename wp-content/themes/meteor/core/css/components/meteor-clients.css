@@ -1,0 +1,257 @@
+/* components/meteor-clients.css */
+.meteor-clients ul {
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+.meteor-clients ul li {
+  list-style: none;
+  text-align: center;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.meteor-clients ul li a {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+}
+.meteor-clients.opacity-effect ul li a {
+  opacity: 0.60;
+}
+.meteor-clients.scrollable > .meteor-jcarousel {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 860px;
+}
+.meteor-clients.scrollable > .meteor-jcarousel > ul {
+  width: 9999px;
+  margin-left: -20px;
+}
+.meteor-clients.scrollable > .meteor-jcarousel > ul > li {
+  float: left;
+  text-align: center !important;
+}
+.meteor-clients.scrollable > .meteor-jcarousel > ul > li > a img {
+  /*              max-width: 96%; // Prevent clipping*/
+
+}
+.meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="1"] > li {
+  width: 860px;
+}
+.meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="2"] > li {
+  width: 420px;
+}
+.meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="3"] > li {
+  width: 274px;
+}
+.meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="4"] > li {
+  width: 200px;
+}
+.meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="5"] > li {
+  width: 156px;
+}
+.meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="6"] > li {
+  width: 127px;
+}
+.meteor-clients.scrollable > span.meteor-jcarousel-nav {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 30px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.meteor-clients.scrollable > span.meteor-jcarousel-nav:after {
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  font-family: "FontAwesome", sans-serif;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 28px;
+  color: #fa5b15;
+  -webkit-font-smoothing: antialiased;
+}
+.meteor-clients.scrollable > span.meteor-jcarousel-nav.prev {
+  left: 0;
+}
+.meteor-clients.scrollable > span.meteor-jcarousel-nav.prev:after {
+  content: "\f104";
+}
+.meteor-clients.scrollable > span.meteor-jcarousel-nav.next {
+  right: 0;
+}
+.meteor-clients.scrollable > span.meteor-jcarousel-nav.next:after {
+  content: "\f105";
+}
+.meteor-clients.scrollable > span.meteor-jcarousel-nav:hover {
+  cursor: pointer;
+}
+.meteor-clients.scrollable > span.meteor-jcarousel-nav:hover:after {
+  color: #292929;
+}
+@media (min-width: 1200px) {
+  body[data-widescreen=true] .meteor-clients.scrollable > .meteor-jcarousel {
+    width: 1090px;
+  }
+  body[data-widescreen=true] .meteor-clients.scrollable > .meteor-jcarousel > ul {
+    margin-left: -30px;
+  }
+  body[data-widescreen=true] .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="1"] > li {
+    width: 1090px;
+  }
+  body[data-widescreen=true] .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="2"] > li {
+    width: 530px;
+  }
+  body[data-widescreen=true] .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="3"] > li {
+    width: 344px;
+  }
+  body[data-widescreen=true] .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="4"] > li {
+    width: 250px;
+  }
+  body[data-widescreen=true] .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="5"] > li {
+    width: 194px;
+  }
+  body[data-widescreen=true] .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="6"] > li {
+    width: 157px;
+  }
+}
+@media (min-width: 979px) {
+  [data-width-adjust="50"] ul li a {
+    max-width: 50%;
+  }
+  [data-width-adjust="55"] ul li a {
+    max-width: 55%;
+  }
+  [data-width-adjust="60"] ul li a {
+    max-width: 60%;
+  }
+  [data-width-adjust="65"] ul li a {
+    max-width: 65%;
+  }
+  [data-width-adjust="70"] ul li a {
+    max-width: 70%;
+  }
+  [data-width-adjust="75"] ul li a {
+    max-width: 75%;
+  }
+  [data-width-adjust="80"] ul li a {
+    max-width: 80%;
+  }
+  [data-width-adjust="85"] ul li a {
+    max-width: 85%;
+  }
+  [data-width-adjust="90"] ul li a {
+    max-width: 90%;
+  }
+  [data-width-adjust="95"] ul li a {
+    max-width: 95%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .meteor-clients.scrollable > .meteor-jcarousel {
+    width: 644px;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="1"] > li {
+    width: 644px;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="2"] > li {
+    width: 312px;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="3"] > li {
+    width: 202px;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="4"] > li {
+    width: 146px;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="5"] > li {
+    width: 113px;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="6"] > li {
+    width: 91px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .meteor-clients.scrollable > .meteor-jcarousel {
+    width: 360px;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="1"] > li {
+    margin-left: 20px;
+    width: 360px;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="2"] > li,
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="3"] > li,
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="4"] > li,
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="5"] > li,
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="6"] > li {
+    margin-left: 20px;
+    width: 170px;
+  }
+}
+@media (max-width: 479px) {
+  .meteor-clients[data-width-adjust="50"] ul li a {
+    max-width: 50%;
+  }
+  .meteor-clients[data-width-adjust="55"] ul li a {
+    max-width: 55%;
+  }
+  .meteor-clients[data-width-adjust="60"] ul li a {
+    max-width: 60%;
+  }
+  .meteor-clients[data-width-adjust="65"] ul li a {
+    max-width: 65%;
+  }
+  .meteor-clients[data-width-adjust="70"] ul li a {
+    max-width: 70%;
+  }
+  .meteor-clients[data-width-adjust="75"] ul li a {
+    max-width: 75%;
+  }
+  .meteor-clients[data-width-adjust="80"] ul li a {
+    max-width: 80%;
+  }
+  .meteor-clients[data-width-adjust="85"] ul li a {
+    max-width: 85%;
+  }
+  .meteor-clients[data-width-adjust="90"] ul li a {
+    max-width: 90%;
+  }
+  .meteor-clients[data-width-adjust="95"] ul li a {
+    max-width: 95%;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel {
+    width: 100%;
+    margin-left: 40px;
+    width: 220px;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel ul li {
+    margin-left: 20px !important;
+  }
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="1"] > li,
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="2"] > li,
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="3"] > li,
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="4"] > li,
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="5"] > li,
+  .meteor-clients.scrollable > .meteor-jcarousel > ul[data-columns="6"] > li {
+    width: 220px;
+  }
+}
+@media (max-width: 767px) {
+  .meteor-clients.scrollable > .meteor-jcarousel > ul > li {
+    margin-top: 0 !important;
+  }
+}

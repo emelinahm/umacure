@@ -1,0 +1,250 @@
+/* meteor.vslider.css */
+.meteor-vslider > ul.slides li {
+  display: none;
+}
+.meteor-vslider > ul.slides li:first-child {
+  display: block !important;
+}
+.meteor-vslider.boxed > .meteor-meta .container {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.meteor-vslider.boxed > .meteor-meta[data-align=right] .container {
+  padding-right: 22px;
+}
+.meteor-vslider.boxed > .meteor-meta[data-align=right] .container > span {
+  right: 22px;
+}
+.meteor-vslider.boxed > .meteor-meta[data-align=left] .container {
+  padding-left: 22px;
+}
+.meteor-vslider.boxed > .meteor-meta[data-align=left] .container > span {
+  left: 22px;
+}
+.meteor-vslider > .meteor-meta {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+}
+.meteor-vslider > .meteor-meta[data-align=right] .container > a {
+  float: right;
+  margin-right: 81px;
+}
+.meteor-vslider > .meteor-meta[data-align=right] .container > span {
+  right: 0;
+}
+.meteor-vslider > .meteor-meta[data-align=left] .container > a {
+  float: left;
+  margin-left: 81px;
+}
+.meteor-vslider > .meteor-meta[data-align=left] .container > span {
+  left: 0;
+}
+.meteor-vslider > .meteor-meta .container {
+  padding: 0 0 21px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.meteor-vslider > .meteor-meta .container > a {
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+  z-index: 1;
+}
+.meteor-vslider > .meteor-meta .container > a.notitle {
+  visibility: hidden;
+}
+.meteor-vslider > .meteor-meta .container > a h3,
+.meteor-vslider > .meteor-meta .container > a small {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.meteor-vslider > .meteor-meta .container > a h3 {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 21px;
+  max-width: 100%;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(41, 41, 41, 0.9);
+  background-color: #fb773d;
+  background-color: rgba(251, 119, 61, 0.9);
+}
+.meteor-vslider > .meteor-meta .container > span {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  z-index: 2;
+}
+.meteor-vslider > .meteor-meta .container > span a.nav {
+  display: none;
+  float: left;
+  width: 40px;
+  height: 40px;
+  font-family: "FontAwesome", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.meteor-vslider > .meteor-meta .container > span a.nav:hover,
+.meteor-vslider > .meteor-meta .container > span a.nav.animating {
+  cursor: pointer;
+}
+.meteor-vslider > .meteor-meta .container > span a.nav:hover:after,
+.meteor-vslider > .meteor-meta .container > span a.nav.animating:after {
+  color: #fb773d;
+}
+.meteor-vslider > .meteor-meta .container > span a.nav:after {
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  display: block;
+  color: #4f4f4f;
+  line-height: 40px;
+  text-align: center;
+}
+.meteor-vslider > .meteor-meta .container > span a.nav.prev {
+  margin-right: 1px;
+}
+.meteor-vslider > .meteor-meta .container > span a.nav.prev:after {
+  content: "\f104";
+}
+.meteor-vslider > .meteor-meta .container > span a.nav.next:after {
+  content: "\f105";
+}
+.meteor-vslider.vertical > .meteor-meta > .container > span > .nav.prev:after {
+  content: "\f106";
+}
+.meteor-vslider.vertical > .meteor-meta > .container > span > .nav.next:after {
+  content: "\f107";
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .meteor-vslider > .meteor-meta[data-align=right] .container > a {
+    float: right;
+    margin-right: 73px;
+  }
+  .meteor-vslider > .meteor-meta[data-align=right] .container > a h3 {
+    margin-left: 73px;
+  }
+  .meteor-vslider > .meteor-meta[data-align=right] .container > span {
+    right: 0;
+  }
+  .meteor-vslider > .meteor-meta[data-align=left] .container > a {
+    float: left;
+    margin-left: 73px;
+  }
+  .meteor-vslider > .meteor-meta[data-align=left] .container > a h3 {
+    margin-right: 73px;
+  }
+  .meteor-vslider > .meteor-meta[data-align=left] .container > span {
+    left: 0;
+  }
+  .meteor-vslider > .meteor-meta > .container > a h3 {
+    height: 36px;
+    line-height: 36px;
+    font-size: 113%;
+    padding: 0 15px;
+  }
+  .meteor-vslider > .meteor-meta > .container > span a.nav {
+    width: 36px;
+    height: 36px;
+  }
+  .meteor-vslider > .meteor-meta > .container > span a.nav:after {
+    line-height: 36px;
+  }
+  .meteor-vslider > .meteor-meta > .container > a h3 {
+    font-size: 110%;
+  }
+}
+@media (max-width: 767px) {
+  .meteor-vslider > .meteor-meta[data-align=right] .container > a {
+    float: right;
+    margin-right: 61px;
+  }
+  .meteor-vslider > .meteor-meta[data-align=right] .container > a h3 {
+    margin-left: 61px;
+  }
+  .meteor-vslider > .meteor-meta[data-align=right] .container > span {
+    right: 0;
+  }
+  .meteor-vslider > .meteor-meta[data-align=left] .container > a {
+    float: left;
+    margin-left: 61px;
+  }
+  .meteor-vslider > .meteor-meta[data-align=left] .container > a h3 {
+    margin-right: 61px;
+  }
+  .meteor-vslider > .meteor-meta[data-align=left] .container > span {
+    left: 0;
+  }
+  .meteor-vslider > .meteor-meta > .container > a h3 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 113%;
+    padding: 0 15px;
+  }
+  .meteor-vslider > .meteor-meta > .container > span a.nav {
+    width: 30px;
+    height: 30px;
+  }
+  .meteor-vslider > .meteor-meta > .container > span a.nav:after {
+    line-height: 30px;
+  }
+  .meteor-vslider > .meteor-meta > .container > a {
+    font-size: 90%;
+  }
+}
+@media (max-width: 479px) {
+  .meteor-vslider > .meteor-meta[data-align="right"] > .container > span {
+    right: 10px !important;
+  }
+  .meteor-vslider > .meteor-meta[data-align="left"] > .container > span {
+    left: 10px !important;
+  }
+  .meteor-vslider > .meteor-meta .container {
+    padding: 0 10px 10px !important;
+  }
+  .meteor-vslider > .meteor-meta .container > a h3 {
+    width: 30px;
+    padding: 0 1px;
+    position: relative;
+    text-indent: -9999px;
+  }
+  .meteor-vslider > .meteor-meta .container > a h3:after {
+    font-family: "FontAwesome", sans-serif;
+    position: absolute;
+    display: block;
+    content: "\f0c1";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-indent: 0;
+    color: red;
+    text-align: center;
+    color: #ffffff;
+    line-height: 31px;
+    text-shadow: 0 1px 2px rgba(41, 41, 41, 0.3);
+    -webkit-font-smoothing: antialiased;
+  }
+}

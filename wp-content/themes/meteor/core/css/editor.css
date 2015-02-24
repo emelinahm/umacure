@@ -1,0 +1,132 @@
+@import url("typography.css");
+
+@import url("wp-core.css");
+/* editor.css */
+body {
+  font-size: 15px;
+  line-height: 1.5em;
+  padding: 10px;
+}
+img.mcewpmore {
+  width: 100%;
+  margin: 1.6em 0 0;
+}
+.mceContentBody {
+  color: #4f4f4f;
+  line-height: 1.5em;
+  color: #292929;
+}
+.mceContentBody {
+  *zoom: 1;
+}
+.mceContentBody:before,
+.mceContentBody:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mceContentBody:after {
+  clear: both;
+}
+.mceContentBody > *:first-child,
+.mceContentBody > .inner-content > *:first-child {
+  margin-top: 0 !important;
+}
+.mceContentBody > *:last-child,
+.mceContentBody > .inner-content > *:last-child {
+  margin-bottom: 0 !important;
+}
+.mceContentBody h1,
+.mceContentBody h2,
+.mceContentBody h3,
+.mceContentBody h4,
+.mceContentBody h5,
+.mceContentBody h6 {
+  font-family: "Raleway";
+  margin: 32px 0 0.5em;
+  color: #292929;
+}
+.mceContentBody h1,
+.mceContentBody h2 {
+  font-weight: 500;
+  font-size: 150%;
+}
+.mceContentBody h3,
+.mceContentBody h4 {
+  font-weight: 700;
+  font-size: 110%;
+}
+.mceContentBody h5,
+.mceContentBody h6 {
+  font-weight: 700;
+  font-size: 110%;
+}
+.mceContentBody pre,
+.mceContentBody code {
+  background: #f4f4f4 !important;
+  word-wrap: break-word;
+}
+.mceContentBody pre {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1.1em 1em !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+.mceContentBody pre.prettyprint {
+  width: 100% !important;
+  border: none !important;
+}
+.mceContentBody a:hover {
+  text-decoration: underline;
+}
+.mceContentBody strong {
+  color: #292929;
+}
+footer .mceContentBody {
+  color: #818181 !important;
+}
+footer .mceContentBody a {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+.mceContentBody .wp-caption {
+  background: #fbfbfb;
+  border: dashed 1px #e0e0e0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+.mceContentBody .wp-caption dd.wp-caption-dd {
+  margin-top: 0.8em;
+  font-size: 85%;
+  text-align: left;
+  text-shadow: 0 1px 0 white;
+}
+.mceContentBody.post-type-pricing:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  content: "Write the features of the pricing plan, one per line.";
+  width: 100%;
+  padding-bottom: 1.5em;
+  margin-bottom: 1em;
+  border-bottom: dashed 1px #f2f2f2;
+  font-size: small;
+  color: #ccc;
+  font-weight: 300;
+  font-style: italic;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}

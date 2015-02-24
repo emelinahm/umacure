@@ -1,0 +1,76 @@
+/*font指定-基本はこれで安定*/
+body{
+  font-family:'Lucida Grande',
+ 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',
+ Meiryo, メイリオ, sans-serif !important;
+}
+
+/*****画像を光らせる*****/
+a:hover img{
+opacity:0.8;
+filter:alpha(opacity=80);
+-ms-filter: “alpha( opacity=80 )”;
+}
+
+a:active img{
+opacity:0.8;
+filter:alpha(opacity=80);
+-ms-filter: “alpha( opacity=80 )”;
+}
+
+
+.clear{
+  clear:both;
+}
+
+/*デバイス別表示領域についての設定*/
+
+.mobile-only{
+  display:none;
+}
+.pc-only{
+  display:block;
+}
+.pc-tablet{
+  display:block;
+}
+.tablet-mobile{
+  display:none;
+}
+
+
+@media only screen and (max-width: 980px) {
+
+  .mobile-only{
+    display:none;
+  }
+  .pc-only{
+    display:none;
+  }
+  .pc-tablet{
+    display:block;
+  }
+
+  .tablet-mobile{
+    display:block;
+  }
+
+}
+
+
+@media only screen and (max-width: 740px) {
+  .mobile-only{
+    display:block;
+  }
+  .pc-only{
+    display:none;
+  }
+  .pc-tablet{
+    display:none;
+  }
+
+  .tablet-mobile{
+    display:block;
+  }
+
+}

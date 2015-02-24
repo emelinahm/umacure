@@ -1,0 +1,168 @@
+/* components/meteor-quote.css */
+.meteor-quote-simple blockquote {
+  background: none;
+  border-left: none;
+  font-style: normal;
+  font-size: 160%;
+  font-weight: 300;
+  color: #4a4a4a;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .meteor-quote-simple blockquote {
+    font-size: 135%;
+    line-height: 1.6em;
+  }
+}
+@media (max-width: 767px) {
+  .meteor-quote-simple blockquote {
+    font-size: 130%;
+    line-height: 1.6em;
+  }
+  .meteor-quote-simple blockquote br {
+    line-height: 2em;
+  }
+}
+.meteor-quote {
+  position: relative;
+  font-family: "Raleway";
+  background: #f9f9f9;
+  padding: 14px 14px 14px 90px;
+}
+.meteor-quote.standalone {
+  margin-bottom: 1.5em;
+}
+.meteor-quote.standalone > blockquote {
+  font-size: 1.15em;
+}
+.meteor-quote:before {
+  font-family: "FontAwesome", sans-serif;
+  position: absolute;
+  content: "\f10d";
+  background: #fb773d;
+  left: 0;
+  text-align: center;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  width: 63px;
+  height: 38px;
+  top: 14px;
+  line-height: 38px;
+  font-size: 22px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-top-right-radius: 6px;
+  -o-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-bottom-right-radius: 6px;
+  -o-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.meteor-quote > blockquote {
+  font-size: 128%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6em;
+  background: none;
+  color: #4f4f4f;
+  border: none;
+  margin: 0 0 0 0;
+  padding: 0;
+  text-shadow: none;
+}
+.meteor-quote > blockquote > *:last-child {
+  margin-bottom: 0 !important;
+}
+.meteor-quote > p {
+  margin: 0.7em 0 0 0;
+  color: #a2a2a2;
+}
+.meteor-quote > p span {
+  display: block;
+  line-height: 1.5em;
+  float: left;
+}
+.meteor-quote > p span.author {
+  font-weight: 500;
+  color: #8e8e8e;
+}
+.meteor-quote > p span.author a {
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  color: inherit;
+}
+.meteor-quote > p span.author a:hover {
+  color: #fa5b15;
+}
+.meteor-quote > p span.author + span.title {
+  margin-left: 1.5em;
+}
+.meteor-quote > p span.title {
+  font-weight: 300;
+}
+.meteor-post > .meteor-quote:before {
+  width: 48px;
+  height: 34px;
+  top: 14px;
+  line-height: 34px;
+  font-size: 14px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-top-right-radius: 6px;
+  -o-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-bottom-right-radius: 6px;
+  -o-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .meteor-quote {
+    padding-left: 60px;
+  }
+  .meteor-quote:before {
+    width: 43px;
+    height: 35px;
+    top: 14px;
+    line-height: 35px;
+    font-size: 16px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    -o-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-bottom-right-radius: 6px;
+    -o-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .meteor-quote > blockquote br {
+    line-height: 2em;
+  }
+}
+@media (max-width: 767px) {
+  .meteor-quote {
+    padding-left: 50px;
+  }
+  .meteor-quote:before {
+    width: 35px;
+    height: 32px;
+    top: 14px;
+    line-height: 32px;
+    font-size: 14px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    -o-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-bottom-right-radius: 6px;
+    -o-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .meteor-quote > blockquote br {
+    line-height: 2em !important;
+  }
+}

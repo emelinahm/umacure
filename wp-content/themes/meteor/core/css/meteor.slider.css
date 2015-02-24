@@ -1,0 +1,223 @@
+/* meteor.slider.css */
+.meteor-slider ul.slides > li {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.meteor-slider ul.slides > li:before {
+  position: absolute;
+  display: block;
+  content: "\020";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.meteor-slider.boxed .meteor-meta > .container {
+  padding: 0 20px;
+}
+.meteor-slider .meteor-meta {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  z-index: 2;
+  margin: 0 auto;
+  border: solid rgba(255, 255, 255, 0.31);
+  border-width: 1px 0;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+.meteor-slider .meteor-meta:hover,
+.meteor-slider .meteor-meta.moving {
+  background: rgba(255, 255, 255, 0.08);
+}
+.meteor-slider .meteor-meta > .container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  z-index: 2;
+}
+.meteor-slider .meteor-meta > .container > a {
+  margin-top: -1px !important;
+  margin-bottom: -1px !important;
+  position: relative;
+  display: block;
+  float: left;
+  max-width: 100%;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.88);
+}
+.meteor-slider .meteor-meta > .container > a h3,
+.meteor-slider .meteor-meta > .container > a small {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  line-height: 1.2;
+  padding: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.meteor-slider .meteor-meta > .container > a h3 {
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  font-weight: 600;
+  font-family: "Raleway";
+  font-size: 135%;
+  margin: 0;
+  color: #292929;
+}
+.meteor-slider .meteor-meta > .container > a h3 + small {
+  margin-top: -10px;
+}
+.meteor-slider .meteor-meta > .container > a small {
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  font-size: 100%;
+  display: block;
+  color: #5c5c5c;
+  margin: 7 0 0 0;
+  padding-top: 0 !important;
+  -webkit-font-smoothing: antialiased;
+}
+.meteor-slider .meteor-meta > .container > a:hover h3 {
+  color: #fb773d;
+}
+.meteor-slider .meteor-meta > .container > a:hover small {
+  color: #636363;
+}
+.meteor-slider .meteor-meta > .container > span {
+  position: absolute;
+  display: block;
+  clear: both;
+  top: 100%;
+  margin-top: 6px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.meteor-slider .meteor-meta > .container > span a.nav {
+  display: block;
+  font-family: "FontAwesome", sans-serif;
+  float: left;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  color: #292929;
+  overflow: hidden;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.68);
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.meteor-slider .meteor-meta > .container > span a.nav:hover,
+.meteor-slider .meteor-meta > .container > span a.nav.animating {
+  color: #fb7a42;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+}
+.meteor-slider .meteor-meta > .container > span a.nav:after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+}
+.meteor-slider .meteor-meta > .container > span a.nav.left:after {
+  content: "\f104";
+  -webkit-font-smoothing: antialiased;
+}
+.meteor-slider .meteor-meta > .container > span a.nav.right {
+  margin-left: 1px;
+}
+.meteor-slider .meteor-meta > .container > span a.nav.right:after {
+  content: "\f105";
+  -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 1200px) {
+  body[data-widescreen=true] .meteor-slider.boxed .meteor-meta .container {
+    padding: 0 30px;
+  }
+  body[data-widescreen=true] .meteor-slider .meteor-meta .container > a h3,
+  body[data-widescreen=true] .meteor-slider .meteor-meta .container > a small {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .meteor-slider .meteor-meta .container > a h3 {
+    font-size: 115%;
+  }
+  .meteor-slider .meteor-meta .container > a small {
+    font-size: 90%;
+  }
+  .meteor-slider .meteor-meta .container > a h3,
+  .meteor-slider .meteor-meta .container > a small {
+    padding: 12px;
+  }
+  .meteor-slider .meteor-meta .container > span a.nav {
+    font-size: 23px;
+    width: 32px;
+    height: 32px;
+  }
+  .meteor-slider .meteor-meta .container > span a.nav:after {
+    line-height: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .meteor-slider .meteor-meta .container {
+    padding: 0;
+  }
+  .meteor-slider .meteor-meta .container > a h3 {
+    font-weight: 600;
+    font-size: 100%;
+  }
+  .meteor-slider .meteor-meta .container > a small {
+    font-size: 85%;
+  }
+  .meteor-slider .meteor-meta .container > a h3,
+  .meteor-slider .meteor-meta .container > a small {
+    padding: 12px;
+  }
+  .meteor-slider .meteor-meta .container > span a.nav {
+    font-size: 19px;
+    width: 25px;
+    height: 25px;
+  }
+  .meteor-slider .meteor-meta .container > span a.nav:after {
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>TODO supply a title</title>
+		<meta charset="Shift_JIS">
+		<meta name="viewport" content="width=device-width">
+		<script type="text/javascript">
+			var get = function() {};
+			
+			get.prototype.call = function(url) {
+				// Return a new promise.
+				return new Promise(function(resolve, reject) {
+					// Do the usual XHR stuff
+					var req = new XMLHttpRequest();
+					req.open('GET', url);
+
+					req.onload = function() {
+						// This is called even on 404 etc
+						// so check the status
+						if (req.status === 200) {
+							// Resolve the promise with the response text
+							resolve(req.response);
+						}
+						else {
+							// Otherwise reject with the status text
+							// which will hopefully be a meaningful error
+							reject(Error(req.statusText));
+						}
+					};
+
+					// Handle network errors
+					req.onerror = function() {
+						reject(Error("Network Error"));
+					};
+
+					// Make the request
+					req.send();
+				});
+			};
+			
+			var API = new get();
+
+			API.call('http://l.rola.jp/wp-apis/index.php?api=get_category').then(function(response) {
+				var data = JSON.parse(response).data;
+				for(var i = 0; i < data.length; i++) {
+					document.writeln(data[i].name + '<br>');
+					if (data[i].image_path != "") {
+						document.writeln('<img src="' + data[i].image_path + '" height="75" width="75">');
+					}
+				}
+			}, function(error) {
+				console.error("Failed!", error);
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div>TODO write content</div>
+	</body>
+</html>

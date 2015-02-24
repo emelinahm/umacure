@@ -1,0 +1,8 @@
+{{#container_class}}
+<div class="meteor-gallery-component {{{container_class}}}{{#visibility}} {{{visibility}}}{{/visibility}}"{{#inline_css}} style="{{{inline_css}}}"{{/inline_css}}>
+{{#title_heading}}<h2 class="title-heading">{{title_heading}}</h2>{{/title_heading}}
+{{/container_class}}
+<div class="meteor-posts meteor-gallery standalone" data-columns="{{{gallery_columns}}}" {{#opt_permalink}} data-permalink="true"{{/opt_permalink}}{{#opt_lightbox}} data-lightbox="true" data-gallery="true" {{/opt_lightbox}}{{#click_behavior}} data-click-behavior="{{{click_behavior}}}"{{/click_behavior}}>
+  {{>meteor_gallery}}
+</div><!-- .meteor-gallery -->
+{{#container_class}}</div><!-- .gallery-component -->{{/container_class}}

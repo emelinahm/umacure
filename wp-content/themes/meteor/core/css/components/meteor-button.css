@@ -1,0 +1,128 @@
+/* components/meteor-button.css */
+.meteor-capsule {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background 200ms ease-in-out;
+  -moz-transition: background 200ms ease-in-out;
+  -o-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
+  display: inline-block;
+  background: #fb773d;
+  padding: 0.16em 0.75em;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.meteor-capsule:hover {
+  background: #4f4f4f;
+}
+.meteor-capsule.small {
+  font-size: 90%;
+}
+.meteor-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  background: #fb7a42;
+  font-family: "Raleway";
+  margin-bottom: 5px;
+  line-height: 1.5em;
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 105%;
+  letter-spacing: 0.1pt;
+  text-decoration: none !important;
+  text-shadow: 0 1px 2px rgba(41, 41, 41, 0.55);
+  border: none;
+  text-align: center !important;
+  z-index: 1;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.meteor-button i[class*="icon-"] {
+  position: relative;
+  font-size: 1.3em;
+  font-weight: 300;
+  top: 0.05em;
+}
+.meteor-button:before,
+.meteor-button:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  content: "\020";
+  width: 100%;
+  height: 100%;
+}
+.meteor-button:before {
+  -webkit-transition: box-shadow 200ms ease-in-out;
+  -moz-transition: box-shadow 200ms ease-in-out;
+  -o-transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  background: #fb773d;
+  padding-top: 5px;
+  z-index: -2;
+}
+.meteor-button:after {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.53) inset;
+  -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.53) inset;
+  -o-box-shadow: 0 0 20px rgba(255, 255, 255, 0.53) inset;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.53) inset;
+  border-bottom: solid 1px;
+  border-bottom-color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.52);
+  background: #fb7a42;
+  z-index: -1;
+}
+.meteor-button:hover:before {
+  -webkit-box-shadow: 0 2px 10px rgba(250, 91, 21, 0.5);
+  -moz-box-shadow: 0 2px 10px rgba(250, 91, 21, 0.5);
+  -o-box-shadow: 0 2px 10px rgba(250, 91, 21, 0.5);
+  box-shadow: 0 2px 10px rgba(250, 91, 21, 0.5);
+}
+.meteor-button.fw {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.meteor-button.large {
+  padding: 8px 18px;
+}
+.meteor-button.medium {
+  font-size: 100%;
+  padding: 6px 14px;
+}
+.meteor-button.small {
+  font-size: 95%;
+  padding: 5px 12px 3px;
+}
+@media (max-width: 767px) {
+  a.meteor-button {
+    font-size: 105%;
+  }
+}

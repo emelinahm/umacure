@@ -1,0 +1,21 @@
+<div class="meteor-aside-posts {{{container_class}}}{{#visibility}} {{{visibility}}}{{/visibility}}"{{#opt_permalink}} data-permalink="true"{{/opt_permalink}}{{#opt_lightbox}} data-lightbox="true"{{/opt_lightbox}}{{#opt_gallery}} data-gallery="true"{{/opt_gallery}}{{#click_behavior}} data-click-behavior="{{{click_behavior}}}"{{/click_behavior}}{{#inline_css}} style="{{{inline_css}}}"{{/inline_css}}>
+{{#title_heading}}<h2 class="title-heading">{{title_heading}}</h2>{{/title_heading}}
+  <ul>
+{{#posts}}
+    <li class="item clearfix {{{post_class}}}"{{#image}}{{#padding}} style="padding-left: {{{padding}}}px; min-height: {{{height}}}px;"{{/padding}}{{/image}}>
+      {{#image}}<div class="frame float-left" data-permalink="{{{permalink}}}" style="width: {{{width}}}px;">
+        <a href="{{#opt_lightbox}}{{{image_src}}}{{/opt_lightbox}}{{^opt_lightbox}}{{{permalink}}}{{/opt_lightbox}}"><img alt="{{{title}}}" width="{{{width}}}" height="{{{height}}}" src="{{{image}}}"></a>
+      </div>{{/image}}
+      <div class="meta">
+        <h3 class="title">{{#title_link}}{{#permalink}}<a href="{{{permalink}}}">{{/permalink}}{{/title_link}}{{#title_icon}}<i class="{{{title_icon}}}"></i> &nbsp; {{/title_icon}}{{{title}}}{{#title_link}}{{#permalink}}</a>{{/permalink}}{{/title_link}}</h3>
+        {{#show_description}}<small class="desc">{{{description}}}</small>{{/show_description}}
+      </div>
+      <div class="text">
+        {{#show_excerpt}}<div class="excerpt">
+          {{{excerpt}}}</div><!-- .excerpt -->
+        {{/show_excerpt}}{{#show_link}}<a class="{{{link_class}}}" href="{{{permalink}}}">{{{more_text}}}</a>{{/show_link}}
+      </div><!-- .text -->
+    </li><!-- .item -->
+{{/posts}}
+  </ul>
+</div><!-- .meteor-aside-posts -->
