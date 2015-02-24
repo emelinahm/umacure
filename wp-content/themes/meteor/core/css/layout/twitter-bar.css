@@ -1,0 +1,138 @@
+/* layout/twitter-bar.css */
+#twitter-bar {
+  position: relative;
+  margin-top: 44px;
+  margin-bottom: -44px;
+  width: 100%;
+  background: #f5f5f5;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09) inset;
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09) inset;
+}
+#twitter-bar div.nav-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden !important;
+}
+#twitter-bar span.nav {
+  position: absolute;
+  display: block;
+  width: 33px;
+  height: 30px;
+  top: 50%;
+  background: #ffffff;
+  margin-top: -15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  z-index: 4;
+}
+#twitter-bar span.nav:hover {
+  cursor: pointer;
+}
+#twitter-bar span.nav:hover:after {
+  color: #292929;
+}
+#twitter-bar span.nav:after {
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  font-family: "FontAwesome", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #fa5b15;
+  -webkit-font-smoothing: antialiased;
+}
+#twitter-bar span.nav.prev {
+  -webkit-transition: left 200ms ease-in-out;
+  -moz-transition: left 200ms ease-in-out;
+  -o-transition: left 200ms ease-in-out;
+  transition: left 200ms ease-in-out;
+  left: -72px;
+}
+#twitter-bar span.nav.prev:after {
+  content: "\f104";
+}
+#twitter-bar span.nav.next {
+  -webkit-transition: right 200ms ease-in-out;
+  -moz-transition: right 200ms ease-in-out;
+  -o-transition: right 200ms ease-in-out;
+  transition: right 200ms ease-in-out;
+  right: -72px;
+}
+#twitter-bar span.nav.next:after {
+  content: "\f105";
+}
+#twitter-bar .container a.twitter-icon {
+  position: absolute;
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  color: #fb773d;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+  top: 50%;
+  left: 0;
+  margin-top: -15px;
+  text-shadow: 0 1px 1px #ffffff;
+  -webkit-font-smoothing: antialiased;
+  z-index: 3;
+}
+#twitter-bar .container p.tweet {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  color: #696969;
+  margin: 0;
+  padding: 18px 0 18px 45px;
+  text-shadow: 0 1px 0 #ffffff;
+  z-index: 2;
+  white-space: break-word;
+}
+#twitter-bar .container p.tweet > i.icon-spinner {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #fb7a42;
+}
+#twitter-bar .container p.tweet a {
+  color: #fa5b15;
+}
+#twitter-bar .container p.tweet a:hover {
+  color: #fa5b15;
+  text-decoration: underline;
+}
+#twitter-bar .container p.tweet small.time {
+  white-space: nowrap;
+  opacity: 0.7;
+  margin-left: 0.3em;
+}
+#twitter-bar .container p.tweet small.time span {
+  margin: 0 0.6em 0 0.4em;
+}
+@media (max-width: 767px) {
+  #twitter-bar .container p.tweet {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #twitter-bar .container a.twitter-icon {
+    display: none !important;
+  }
+}

@@ -1,0 +1,35 @@
+/* core.slider.css */
+.slider-core {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.slider-core ul.slides {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.slider-core ul.slides li {
+  position: relative;
+  list-style: none;
+  display: none;
+  width: 100%;
+}
+.slider-core ul.slides li:first-child {
+  display: block;
+}
+.slider-core ul.slides li.current {
+  display: block !important;
+  z-index: 2;
+}
+.slider-core ul.slides li.next {
+  position: absolute;
+  display: block !important;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.slider-core ul.slides li img {
+  width: 100%;
+}

@@ -1,0 +1,119 @@
+/* tables/tables.less */
+table {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2em;
+  border-collapse: collapse;
+}
+footer table * {
+  word-break: break-word;
+}
+table th {
+  font-family: "Raleway";
+  font-size: 105%;
+}
+footer table th {
+  color: #bdbdbd !important;
+}
+table tr.odd td {
+  background: rgba(162, 162, 162, 0.065);
+}
+table.default th {
+  font-weight: normal;
+  color: #292929;
+  font-weight: bold;
+  padding: 0.8em 0.5em;
+  border-bottom: solid 2px #fb7a42;
+}
+table.default td {
+  color: inherit;
+  padding: 0.8em 0.5em;
+}
+table.default tbody tr:hover td {
+  background: rgba(162, 162, 162, 0.02);
+}
+table.default-lines th {
+  font-weight: bold;
+  color: #292929;
+  padding: 0.5em 0.8em;
+  border-bottom: solid 2px #fb7a42;
+}
+table.default-lines td {
+  border-bottom: solid 1px #dbdbdb;
+  padding: 0.5em 0.8em;
+}
+footer table.default-lines td {
+  border-bottom-color: #818181;
+  border-bottom-color: rgba(129, 129, 129, 0.22);
+}
+table.default-lines tbody tr:hover td {
+  background: rgba(162, 162, 162, 0.02);
+}
+table.box-lines {
+  border-top: solid 3px #6d6d6d;
+  border-bottom: solid 1px #c6c6c6;
+}
+footer table.box-lines {
+  border-bottom-color: #818181;
+}
+table.box-lines th {
+  color: #292929;
+  padding: 0.6em;
+  border-right: solid 1px #c6c6c6;
+  border-left: solid 1px #c6c6c6;
+  border-bottom: dashed 1px #dbdbdb;
+  background: rgba(162, 162, 162, 0.05);
+}
+footer table.box-lines th {
+  border-left-color: #818181;
+  border-right-color: #818181;
+  border-bottom-color: #818181;
+}
+table.box-lines td {
+  padding: 0.6em;
+  border-right: solid 1px #c6c6c6;
+  border-left: solid 1px #c6c6c6;
+}
+footer table.box-lines td {
+  border-left-color: #818181;
+  border-right-color: #818181;
+}
+table.box-lines tr:hover td {
+  background: rgba(162, 162, 162, 0.035);
+}
+table.zebra th {
+  padding: 0.5em 0.8em 0.7em;
+  color: #292929;
+}
+table.zebra tr:first-child {
+  border-top: solid 3px transparent;
+}
+table.zebra td {
+  padding: 0.65em;
+}
+table.zebra tr.odd td {
+  background: rgba(162, 162, 162, 0.065);
+}
+table.newspaper {
+  border: solid 1px #c6c6c6;
+}
+footer table.newspaper {
+  border-color: #818181;
+}
+table.newspaper th {
+  color: #292929;
+  padding: 0.6em;
+  border-bottom: dashed 1px #c6c6c6;
+}
+footer table.newspaper th {
+  border-bottom-color: #818181;
+}
+table.newspaper td {
+  padding: 0.8em 0.5em;
+}
+table.newspaper tbody tr:hover td {
+  background: rgba(162, 162, 162, 0.03);
+}

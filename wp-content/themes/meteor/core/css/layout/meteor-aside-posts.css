@@ -1,0 +1,54 @@
+/* layout/meteor-post-aside.css */
+.meteor-post.thumb-aside {
+  *zoom: 1;
+}
+.meteor-post.thumb-aside:before,
+.meteor-post.thumb-aside:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.meteor-post.thumb-aside:after {
+  clear: both;
+}
+.meteor-post.thumb-aside > .post-img {
+  float: left;
+}
+.meteor-post.thumb-aside > .post-img > a {
+  max-width: 100%;
+}
+.meteor-post.thumb-aside > .post-img + .post-details {
+  margin-top: 0;
+}
+.meteor-post.thumb-aside > .post-img i.post-icon {
+  bottom: 0;
+  left: 0;
+}
+.meteor-post.thumb-aside > .post-details {
+  padding-left: 20px;
+  overflow: hidden;
+}
+.meteor-post.thumb-aside > .post-details > .post-meta h3.post-title {
+  padding-top: 0;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .meteor-post.thumb-aside > .post-img {
+    max-width: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .meteor-post.thumb-aside > .post-img {
+    width: 100%;
+    float: none;
+  }
+  .meteor-post.thumb-aside > .post-img + .post-details {
+    margin-top: 1em;
+  }
+  .meteor-post.thumb-aside > .post-img a img {
+    width: 100% !important;
+  }
+  .meteor-post.thumb-aside > .post-details {
+    overflow: visible !important;
+    padding-left: 0;
+  }
+}

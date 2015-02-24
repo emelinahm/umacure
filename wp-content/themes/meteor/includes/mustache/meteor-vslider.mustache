@@ -1,0 +1,20 @@
+{{#fullwidth}}<section class="block fullwidth">{{/fullwidth}}
+<div class="{{#fullwidth}}container-full{{/fullwidth}}{{^fullwidth}}{{{container_class}}}{{/fullwidth}}{{#visibility}} {{{visibility}}}{{/visibility}}"{{#inline_css}} style="{{{inline_css}}}"{{/inline_css}}>
+  <div class="meteor-vslider slider-core{{^fullwidth}} boxed{{/fullwidth}}" {{{options}}}>
+    <ul class="slides">
+      {{#gallery_images}}
+      <li{{#title}} data-title="{{title}}"{{/title}}{{#url}} data-uri="{{{url}}}"{{/url}}>
+        <img alt="" src="{{{image}}}" />
+      </li>
+      {{/gallery_images}}
+    </ul>
+    <div class="meteor-meta" data-align="{{{align}}}">
+      <div class="container clearfix">
+        {{#first_item}}<a href="{{{url}}}"{{^title}} class="notitle"{{/title}}>
+          <h3>{{title}}</h3>
+        </a>{{/first_item}}
+      </div><!-- .container -->
+    </div><!-- .meteor-meta -->
+  </div><!-- .meteor-vslider -->
+</div><!-- .container -->
+{{#fullwidth}}</section>{{/fullwidth}}

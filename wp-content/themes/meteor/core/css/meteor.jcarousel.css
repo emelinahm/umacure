@@ -1,0 +1,7 @@
+/* meteor.jcarousel.css */
+.jcarousel {
+  height: auto;
+}
+.jcarousel > ul > li > * {
+  display: block;
+}

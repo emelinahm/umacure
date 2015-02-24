@@ -1,0 +1,144 @@
+/* layout/navigation.css */
+body.retina header[role=banner] ul#navigation > li > ul {
+  margin-top: -1px !important;
+}
+header[role=banner] ul#navigation > li > ul > li:first-child > ul {
+  margin-top: 0;
+}
+header[role=banner] ul#navigation > li > ul > li:first-child > span.tip {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  top: -4px;
+  left: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #fb6c2e;
+}
+.ie8 header[role=banner] ul#navigation > li > ul > li:first-child > span.tip {
+  display: none;
+}
+header[role=banner] ul#navigation li {
+  position: relative;
+}
+header[role=banner] ul#navigation li ul > li:first-child > a {
+  padding-top: 11px;
+}
+header[role=banner] ul#navigation li ul > li:first-child > a:before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  display: block;
+  content: "\020";
+  width: 100%;
+  padding: 0 1px;
+  margin-left: -1px;
+  height: 3px;
+  background: #fb6c2e;
+  top: 0;
+  left: 0;
+}
+header[role=banner] ul#navigation.fallback li:hover > ul {
+  display: block;
+  visibility: visible;
+}
+header[role=banner] ul#navigation.fallback > li > ul {
+  left: auto !important;
+  top: auto !important;
+  visibility: visible !important;
+}
+header[role=banner] ul#navigation.fallback > li ul {
+  visibility: hidden;
+}
+header[role=banner] ul#navigation > li > ul {
+  left: auto !important;
+  top: auto !important;
+}
+header[role=banner] ul#navigation > li > ul li ul {
+  margin-top: -2px;
+  margin-left: 1px;
+}
+header[role=banner] ul#navigation > li ul {
+  display: none;
+  position: absolute;
+  margin: 0 0 0 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  top: 0;
+  left: 100%;
+  opacity: 0.98;
+  z-index: 1;
+  border: solid #ffffff;
+  border-width: 0 1px 1px;
+  -webkit-box-shadow: 0 1px 3px rgba(41, 41, 41, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(41, 41, 41, 0.4);
+  -o-box-shadow: 0 1px 3px rgba(41, 41, 41, 0.4);
+  box-shadow: 0 1px 3px rgba(41, 41, 41, 0.4);
+}
+header[role=banner] ul#navigation > li ul > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header[role=banner] ul#navigation > li ul > li + li:before {
+  position: absolute;
+  display: block;
+  content: "\020";
+  width: 100%;
+  height: 1px;
+  background: #636363;
+  top: -1px;
+  opacity: 0.10;
+}
+.ie8 header[role=banner] ul#navigation > li ul > li + li:before {
+  display: none;
+}
+header[role=banner] ul#navigation > li ul > li > a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  color: #434343;
+  padding: 8px 15px;
+  width: 190px;
+  font-weight: 500;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  border-top: solid 1px rgba(255, 255, 255, 0.5);
+}
+header[role=banner] ul#navigation > li ul > li > a:hover {
+  color: #fb6c2e;
+  background: #ececec;
+}
+header[role=banner] ul#navigation > li ul > li.submenu:hover > a {
+  color: #fb6c2e;
+  background: #ececec;
+}
+header[role=banner] ul#navigation > li ul > li.submenu:hover > a:after {
+  color: #fb6c2e;
+}
+header[role=banner] ul#navigation > li ul > li.submenu > a:after {
+  font-family: "FontAwesome", sans-serif;
+  position: absolute;
+  display: block;
+  content: "\f105";
+  color: #434343;
+  width: 14px;
+  height: 14px;
+  line-height: 1;
+  font-size: 15px;
+  text-align: center;
+  top: 50%;
+  right: 7.5px;
+  margin-top: -8px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+  z-index: auto;
+}
+header[role=banner] ul#navigation > li ul > li.submenu > a:hover:after {
+  color: #fb6c2e;
+}

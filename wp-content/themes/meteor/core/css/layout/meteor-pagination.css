@@ -1,0 +1,109 @@
+/* layout/meteor-pagination.less */
+.meteor-pagination ul {
+  margin: 0;
+  padding: 0;
+}
+.meteor-pagination ul li {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: left;
+  list-style: none;
+}
+.meteor-pagination ul li + li {
+  margin-left: 10px;
+}
+.meteor-pagination ul li.current,
+.meteor-pagination ul li.hellip,
+.meteor-pagination ul li a {
+  display: block;
+  color: #a2a2a2;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  background: #fcfcfc;
+  border: solid 1px #e6e6e6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.meteor-pagination ul li.hellip {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.meteor-pagination ul li.nav a {
+  position: relative;
+  border: none;
+  background: none;
+}
+.meteor-pagination ul li.nav a:hover {
+  background: none;
+}
+.meteor-pagination ul li.nav a:hover:before {
+  color: #292929;
+}
+.meteor-pagination ul li.nav a:before {
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  font-family: "FontAwesome", sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 1.3;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+  text-align: center;
+  color: #fa5b15;
+  -webkit-font-smoothing: antialiased;
+}
+.meteor-pagination ul li.nav.rewind a:before,
+.meteor-pagination ul li.nav.fast-forward a:before {
+  font-size: 21px;
+}
+.meteor-pagination ul li.nav.rewind a:before {
+  content: "\f100";
+}
+.meteor-pagination ul li.nav.prev a:before {
+  content: "\f104";
+}
+.meteor-pagination ul li.nav.next a:before {
+  content: "\f105";
+}
+.meteor-pagination ul li.nav.fast-forward a:before {
+  content: "\f101";
+}
+.meteor-pagination ul li.current {
+  background: #fb7a42;
+  border: solid 1px #fb773d;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(41, 41, 41, 0.5);
+}
+.meteor-pagination ul li.current:hover {
+  cursor: default;
+}
+.meteor-pagination ul li a {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.meteor-pagination ul li a:hover {
+  color: #636363;
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+@media (max-width: 479px) {
+  .meteor-pagination {
+    text-align: center;
+  }
+  .meteor-pagination ul {
+    display: inline-block;
+  }
+}

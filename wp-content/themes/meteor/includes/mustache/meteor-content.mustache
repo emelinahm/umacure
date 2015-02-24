@@ -1,0 +1,10 @@
+{{#fullwidth}}
+<section class="block{{#visibility}} {{{visibility}}}{{/visibility}}"{{#inline_css}} style="{{{inline_css}}}"{{/inline_css}}>
+{{{content}}}
+</section><!-- .block -->
+{{/fullwidth}}{{^fullwidth}}
+<div class="meteor-content post-content {{container_class}}{{#visibility}} {{{visibility}}}{{/visibility}}"{{#inline_css}} style="{{{inline_css}}}"{{/inline_css}}>
+{{#title_heading}}<h2 class="title-heading">{{title_heading}}</h2>{{/title_heading}}
+{{{content}}}
+</div><!-- .meteor-content -->
+{{/fullwidth}}

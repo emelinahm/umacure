@@ -1,0 +1,12 @@
+{{#container_class}}<div class="meteor-content {{container_class}}{{#visibility}} {{{visibility}}}{{/visibility}}"{{#inline_css}} style="{{{inline_css}}}"{{/inline_css}}>
+{{/container_class}}<div class="meteor-quote standalone">
+  <blockquote>
+{{{content}}}
+  </blockquote>
+  <p class="author clearfix">
+    {{#author}}<span class="author"><a{{#url}} href="{{{url}}}"{{/url}}>{{{author}}}</a></span>{{/author}}
+    {{#description}}<span class="title">{{{description}}}</span>{{/description}}
+  </p>
+</div>{{!<!-- .meteor-quote -->}}{{#container_class}}
+</div><!-- .meteor-content -->
+{{/container_class}}

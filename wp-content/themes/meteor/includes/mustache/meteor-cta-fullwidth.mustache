@@ -1,0 +1,12 @@
+<section class="block container">
+  <div class="row">
+    <div class="{{{container_class}}}{{#visibility}} {{{visibility}}}{{/visibility}}"{{#inline_css}} style="{{{inline_css}}}"{{/inline_css}}>
+      <div class="meteor-cta clearfix">
+        <a class="meteor-button large float-right hidden-phone"{{#url}} href="{{{url}}}"{{/url}}>{{{link_text}}}</a>
+        <h3>{{title}}</h3>
+        {{#description}}<p>{{description}}</p>{{/description}}
+        <a class="meteor-button large fw float-right visible-phone"{{#url}} href="{{{url}}}"{{/url}}>{{{link_text}}}</a>
+      </div><!-- .meteor-cta -->
+    </div><!-- .{{{container_class}}} -->
+  </div><!-- .row -->
+</section>

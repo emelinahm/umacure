@@ -1,0 +1,173 @@
+{{^single_post}}<div class="post-listing {{{container_class}}}{{#visibility}} {{{visibility}}}{{/visibility}}"{{#opt_permalink}} data-permalink="true"{{/opt_permalink}}{{#opt_lightbox}} data-lightbox="true"{{#opt_gallery}} data-gallery="true"{{/opt_gallery}}{{/opt_lightbox}}{{#click_behavior}} data-click-behavior="{{{click_behavior}}}"{{/click_behavior}}{{#inline_css}} style="{{{inline_css}}}"{{/inline_css}}>
+{{#title_heading}}<h2 class="title-heading">{{title_heading}}</h2>{{/title_heading}}{{/single_post}}
+{{#single_post}}<div class="post-listing {{{container_class}}}"{{#opt_permalink}} data-permalink="true"{{/opt_permalink}}{{#opt_lightbox}} data-lightbox="true"{{/opt_lightbox}}{{#opt_gallery}} data-gallery="true"{{/opt_gallery}}{{#click_behavior}} data-click-behavior="{{{click_behavior}}}"{{/click_behavior}}>{{/single_post}}
+{{#posts}}
+
+{{#is_standard}}
+  {{#post_style_normal}}
+{{!
+
+    STANDARD
+
+}}
+  <div class="meteor-post item {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    {{^is_attachment}}{{#image}}<div class="post-img frame" data-permalink="{{{permalink}}}">
+      <a href="{{#opt_lightbox}}{{{image_src}}}{{/opt_lightbox}}{{^opt_lightbox}}{{{permalink}}}{{/opt_lightbox}}"><img alt="{{{title}}}" src="{{{image}}}" /></a>
+      <i class="post-icon {{#icon}}{{{icon}}}{{/icon}}{{^icon}}icon-pencil{{/icon}}{{^single_post}} visible-phone{{/single_post}}"></i>
+    </div><!-- .post-img -->{{/image}}{{/is_attachment}}
+    {{> meteor_post_details}}
+  </div><!-- .meteor-post -->
+  {{/post_style_normal}}{{#post_style_aside}}
+  {{! 
+    
+    STANDARD ASIDE
+    
+  }}
+  <div class="meteor-post thumb-aside item {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    <div class="post-img frame" data-permalink="{{{permalink}}}">
+      <a href="{{#opt_lightbox}}{{{image_src}}}{{/opt_lightbox}}{{^opt_lightbox}}{{{permalink}}}{{/opt_lightbox}}"><img style="width: {{{width}}}px;" {{#height}}height="{{{height}}}" {{/height}}src="{{{image}}}" /></a>
+      <i class="post-icon icon-pencil"></i>
+    </div><!-- .post-img -->
+    {{> meteor_post_details}}
+  </div><!-- .meteor-post.thumb-aside -->
+  {{/post_style_aside}}
+{{/is_standard}}{{#is_quote}}
+{{!
+
+    QUOTE
+
+}}
+  <div class="meteor-post nodetails {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    <div class="meteor-quote">
+      <blockquote>
+        {{{content}}}
+      </blockquote>
+      <p class="author clearfix">
+        {{#meta_quote_author}}<span class="author">{{#meta_quote_url}}<a href="{{{meta_quote_url}}}">{{/meta_quote_url}}{{meta_quote_author}}{{#meta_quote_url}}</a>{{/meta_quote_url}}</span>{{/meta_quote_author}}
+        {{#meta_quote_description}}<span class="title">{{meta_quote_description}}</span>{{/meta_quote_description}}
+      </p>
+    </div><!--.meteor-quote -->
+    {{> meteor_post_nodetails}}
+  </div><!-- .meteor-post -->
+{{/is_quote}}{{#is_link}}
+{{!
+
+    LINK
+
+}}
+  <div class="meteor-post {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    <div class="meteor-quote">
+      <blockquote>
+        {{#meta_link_content}}{{{meta_link_content}}}{{/meta_link_content}}
+      </blockquote>
+      <p class="author clearfix">
+        <span class="title">{{{title}}}</span>
+      </p>
+    </div><!--.meteor-quote -->
+    {{> meteor_post_details}}
+  </div><!-- .meteor-post -->
+{{/is_link}}{{#is_aside}}
+{{!
+
+    ASIDE
+
+}}
+  <div class="meteor-post nodetails {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    <div class="meteor-quote">
+      <div class="post-content">
+        {{{content}}}
+      </div>
+      <p class="author clearfix"><span class="title">{{{title}}}</span></p>
+    </div><!--.meteor-quote -->
+    {{> meteor_post_nodetails}}
+  </div><!-- .meteor-post -->
+{{/is_aside}}{{#is_status}}
+{{!
+
+    STATUS
+
+}}
+  <div class="meteor-post nodetails {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    <aside class="status-container clearfix">
+      <a class="avatar rounded" href="{{{user_url}}}">{{{avatar}}}</a>
+      <div class="post-content">
+        {{{content}}}
+      </div><!-- .post-content -->
+    </aside><!-- .chat-container -->
+    {{> meteor_post_nodetails}}
+  </div><!-- .meteor-post -->
+{{/is_status}}{{#is_chat}}
+{{!
+
+    CHAT
+
+}}
+  <div class="meteor-post nodetails {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    <div class="meteor-quote">
+      <div class="post-content">
+        {{{content}}}
+      </div>
+      <p class="author clearfix"><span class="title">{{{title}}}</span></p>
+    </div><!--.meteor-quote -->
+    {{> meteor_post_nodetails}}
+  </div><!-- .meteor-post -->
+{{/is_chat}}{{#is_gallery}}
+{{!
+
+    GALLERY
+
+}}
+  <div class="meteor-posts meteor-gallery {{{post_class}}}" data-columns="{{{gallery_columns}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    {{> meteor_gallery}}
+    <div class="meteor-post">{{! not all posts have the .meteor-post class (also not .single-post) }}
+      {{> meteor_post_details}}
+    </div><!-- .meteor-post -->
+  </div><!-- .meteor-gallery -->
+{{/is_gallery}}{{#is_image}}
+{{!
+
+    IMAGE
+
+}}
+  <div class="meteor-post item {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    {{#image}}<div class="post-img frame" data-permalink="{{{permalink}}}">
+      <a href="{{#opt_lightbox}}{{{image_src}}}{{/opt_lightbox}}{{^opt_lightbox}}{{{permalink}}}{{/opt_lightbox}}"><img alt="{{{title}}}" src="{{{image}}}" /></a>
+      <i class="post-icon icon-camera-retro{{^single_post}} visible-phone{{/single_post}}"></i>
+    </div><!-- .post-img -->{{/image}}
+    {{> meteor_post_details}}
+  </div><!-- .meteor-post -->
+{{/is_image}}{{#is_audio}}
+{{!
+
+    AUDIO
+
+}}
+  <div class="meteor-post item {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    {{#image}}<div class="post-img frame" data-permalink="{{{permalink}}}">
+      <a href="{{#opt_lightbox}}{{{image_src}}}{{/opt_lightbox}}{{^opt_lightbox}}{{{permalink}}}{{/opt_lightbox}}"><img alt="{{{title}}}" src="{{{image}}}" /></a>
+      <i class="post-icon icon-music{{^single_post}} visible-phone{{/single_post}}"></i>
+    </div><!-- .post-img -->{{/image}}
+    <div class="post-audio standout">
+      {{#audio_file}}<audio src="{{{audio_file}}}" preload="auto" controls="controls" ></audio>{{/audio_file}}
+    </div><!-- .post-audio -->
+    {{> meteor_post_details}}
+  </div><!-- .meteor-post -->
+{{/is_audio}}{{#is_video}}
+{{!
+
+    VIDEO
+
+}}
+  <div class="meteor-post {{{post_class}}}"{{#single_post}}{{> meteor_single_post_attrs}}{{/single_post}}>
+    {{> meteor_video_player}}
+    {{> meteor_post_details}}
+  </div><!-- .meteor-post -->
+  {{/is_video}}
+
+{{/posts}}
+
+{{^single_post}}{{#show_pagination}}{{#pagination}}{{{pagination}}}{{/pagination}}{{/show_pagination}}{{/single_post}}
+
+{{#no_posts_content}}{{{no_posts_content}}}{{/no_posts_content}}
+
+</div><!-- .post-listing -->

@@ -1,0 +1,10 @@
+<div class="meteor-clients{{#enable_tooltips}} tooltips{{/enable_tooltips}}{{#lightbox}} lightbox{{/lightbox}}{{#opacity_effect}} opacity-effect{{/opacity_effect}}{{#split}} {{{split}}}{{/split}}{{#visibility}} {{{visibility}}}{{/visibility}} {{{container_class}}}"{{#inline_css}} style="{{{inline_css}}}"{{/inline_css}}>
+  {{#title_heading}}<h2 class="title-heading">{{title_heading}}</h2>{{/title_heading}}
+{{#rows}}
+  <ul class="row">
+    {{#items}}
+    <li class="item span{{{columns}}}"><a{{#enable_tooltips}}{{#title}} title="{{title}}"{{/title}}{{/enable_tooltips}}{{#enable_links}} href="{{#lightbox}}{{{image_src}}}{{/lightbox}}{{^lightbox}}{{#url}}{{{url}}}{{/url}}{{/lightbox}}"{{/enable_links}}{{#min_opacity}} style="opacity: {{{min_opacity}}};"{{/min_opacity}}{{#opacity_effect}}{{#max_opacity}} data-max-opacity="{{{max_opacity}}}"{{/max_opacity}}{{/opacity_effect}}><img alt="{{title}}" src="{{{image}}}" /></a></li>
+    {{/items}}
+  </ul>
+{{/rows}}
+</div><!-- .meteor-clients -->

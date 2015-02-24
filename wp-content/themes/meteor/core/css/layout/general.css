@@ -1,0 +1,407 @@
+/* layout/general.css */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+*:focus,
+*:active {
+  outline: none !important;
+}
+html {
+  /*
+    Fixes some weird issue with chrome not scrolling on
+    the phone-portrait layout.
+  */
+
+  overflow-y: scroll;
+}
+body {
+  background: #ffffff;
+  margin: 0;
+}
+body[data-widescreen=false] .container {
+  max-width: 940px;
+}
+.container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+}
+.container [class*=span] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.row + .row,
+.row-fluid + .row,
+.row + .row-fluid,
+.row-fluid + .row-fluid {
+  margin-top: 32px;
+}
+.row > br,
+.row-fluid > br,
+.row + br,
+.row-fluid + br,
+.row > p,
+.row-fluid > p {
+  display: none !important;
+}
+section.block {
+  position: relative;
+  z-index: 1;
+}
+section.block.s1 {
+  margin-bottom: 26px;
+}
+section.block.s2 {
+  margin-top: 32px;
+}
+section.block + section.block {
+  margin-top: 44px;
+}
+section.block.s1 + section.block,
+section.block.s2 + section.block {
+  margin-top: 0 !important;
+}
+.nested-layout > [class*=span] {
+  margin-left: 0;
+}
+.nested-layout > [class*=span] + [class*=span] {
+  margin-top: 32px;
+}
+/* Visibility */
+.visible-phone-portrait {
+  display: none !important;
+}
+.visible-phone-landscape {
+  display: none !important;
+}
+.visible-desktop-widescreen {
+  display: none !important;
+}
+/* Classes */
+.clear {
+  clear: both;
+}
+.clear + br {
+  display: none;
+}
+.push + br {
+  display: none !important;
+}
+.box {
+  height: 100px;
+  background: rgba(0, 128, 0, 0.5);
+}
+.rounded {
+  display: inline-block;
+  overflow: hidden;
+  -webkit-border-radius: 2500px;
+  -moz-border-radius: 2500px;
+  -o-border-radius: 2500px;
+  border-radius: 2500px;
+}
+.rounded:after,
+.rounded > img {
+  -webkit-border-radius: 2500px;
+  -moz-border-radius: 2500px;
+  -o-border-radius: 2500px;
+  border-radius: 2500px;
+}
+.rounded-corners {
+  display: inline-block;
+  overflow: hidden;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+.rounded-corners:after,
+.rounded-corners > img {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+.drop-shadow {
+  -webkit-box-shadow: 0 1px 2px rgba(41, 41, 41, 0.6);
+  -moz-box-shadow: 0 1px 2px rgba(41, 41, 41, 0.6);
+  -o-box-shadow: 0 1px 2px rgba(41, 41, 41, 0.6);
+  box-shadow: 0 1px 2px rgba(41, 41, 41, 0.6);
+}
+.inner-shadow-black {
+  position: relative;
+}
+.inner-shadow-black:after {
+  position: absolute;
+  display: block;
+  content: "\020";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+.inner-shadow-white {
+  position: relative;
+}
+.inner-shadow-white:after {
+  position: absolute;
+  display: block;
+  content: "\020";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.1) inset;
+  -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.1) inset;
+  -o-box-shadow: 0 0 10px rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1) inset;
+}
+.telescope {
+  border: solid 6px #ffffff;
+  -webkit-box-shadow: 0 1px 2px rgba(41, 41, 41, 0.38);
+  -moz-box-shadow: 0 1px 2px rgba(41, 41, 41, 0.38);
+  -o-box-shadow: 0 1px 2px rgba(41, 41, 41, 0.38);
+  box-shadow: 0 1px 2px rgba(41, 41, 41, 0.38);
+  -webkit-box-shadow: 0 1px 2px rgba(41, 41, 41, 0.6);
+  -moz-box-shadow: 0 1px 2px rgba(41, 41, 41, 0.6);
+  -o-box-shadow: 0 1px 2px rgba(41, 41, 41, 0.6);
+  box-shadow: 0 1px 2px rgba(41, 41, 41, 0.6);
+}
+.lite-rounded {
+  display: inline-block;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.ovh {
+  overflow: hidden;
+}
+.no-child-margins > *:first-child {
+  margin-top: 0 !important;
+}
+.no-child-margins > *:last-child {
+  margin-bottom: 0 !important;
+}
+ul.hfloat {
+  margin: 0;
+  padding: 0;
+}
+ul.hfloat li {
+  float: left;
+}
+.inline-block {
+  display: inline-block;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.hoverable:hover {
+  cursor: pointer;
+}
+.video-wrapper iframe {
+  display: block;
+  width: 100%;
+}
+.retina-show,
+.retina-show-inline,
+.retina-show-inline-block {
+  display: none !important;
+}
+.dual-container > p,
+.dual-container > br,
+.dual-container .half > p,
+.dual-container .half > br {
+  display: none !important;
+}
+.dual-container .half {
+  float: left;
+  width: 48%;
+  min-height: 20px;
+}
+.dual-container .half + .half,
+.dual-container .half.right {
+  margin-left: 4%;
+}
+/* Video Embeds */
+.embed-container {
+  position: relative!important;
+  padding-bottom: 56.25%!important;
+  padding-top: 30px!important;
+  height: 0!important;
+  overflow: hidden!important;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute!important;
+  top: 0!important;
+  left: 0!important;
+  width: 100%!important;
+  height: 100%!important;
+}
+/* Sidebar */
+.sidebar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sidebar script {
+  display: none !important;
+}
+.sidebar > * + *,
+.sidebar > * + * {
+  margin-top: 44px !important;
+}
+.sidebar > *:first-child {
+  margin-top: 0 !important;
+}
+/* Framed Images */
+a.framed-image {
+  position: relative;
+  display: inline-block;
+}
+a.framed-image:before {
+  position: absolute;
+  display: block;
+  content: "\020";
+  width: 100%;
+  height: 5px;
+  background: #ffffff;
+  opacity: 0.35;
+  filter: alpha(opacity=25);
+  bottom: 0;
+  left: 0;
+}
+a.framed-image:hover span.overlay {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+a.framed-image span.overlay {
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fa5b15;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+a.framed-image img {
+  display: block;
+}
+/* Meteor Info */
+ul.meteor-info {
+  margin: 0 0 -0.4em -2em;
+}
+ul.meteor-info li {
+  display: block;
+  list-style: none;
+  margin-left: 2em;
+  line-height: 1.8em;
+  float: left;
+  margin-bottom: 0.4em;
+  color: #8e8e8e;
+  -webkit-font-smoothing: antialiased;
+}
+body.retina ul.meteor-info li {
+  color: #a5a5a5;
+}
+ul.meteor-info li span.label + a {
+  margin-left: 0.9em;
+}
+ul.meteor-info li.meta-categories a + a {
+  margin-left: 0.15em;
+}
+ul.meteor-info li.meta-description {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  margin-left: 1.8em;
+}
+.post-content ul.meteor-info li.meta-tags i:first-child + a {
+  margin-left: 1.2em;
+}
+ul.meteor-info li.meta-tags a + a {
+  margin-left: 0.15em;
+}
+ul.meteor-info li:before {
+  margin-right: 0.45em;
+  font-weight: 300;
+}
+ul.meteor-info li i:first-child {
+  margin-right: 0.25em;
+}
+ul.meteor-info li a {
+  color: inherit;
+}
+ul.meteor-info li a:hover {
+  color: #fb773d;
+  text-decoration: underline;
+}
+/* Meteor 404 */
+.meteor-404 {
+  min-height: 300px;
+}
+.meteor-404 h1.big-404 {
+  color: #fb773d;
+  font-size: 150px !important;
+  padding-right: 30px;
+  float: left;
+  opacity: 0.2;
+  line-height: 1;
+  margin: 0 !important;
+}
+.meteor-404 h1.big-404 i {
+  position: relative;
+  top: 45px;
+}
+.meteor-404 form.meteor-form {
+  margin: 2em 0 1.8em;
+}
+.meteor-404 form.meteor-form .entry input[type="text"] {
+  max-width: 440px;
+}
+.meteor-404 .ovh {
+  padding-left: 10px;
+}
+@media (max-width: 767px) {
+  .meteor-404 {
+    min-height: auto;
+  }
+  .meteor-404 h1.big-404 {
+    font-size: 200px;
+    float: none;
+    padding: 0;
+    text-align: center;
+  }
+  .meteor-404 h1.big-404 i {
+    top: 0;
+  }
+  .meteor-404 div.half {
+    width: 100%;
+  }
+  .meteor-404 .meteor-button {
+    width: 100%;
+  }
+  .meteor-404 div.ovh {
+    padding-left: 0;
+  }
+  .meteor-404 div.ovh h2 {
+    margin-top: 0.8em;
+  }
+}
